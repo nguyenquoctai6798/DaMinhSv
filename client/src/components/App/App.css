@@ -1,0 +1,476 @@
+/* shared */
+:root{
+  /* ----- main-color
+      ao trang  #fff
+      ao do   #F44336
+      ao xanh #009345
+      ao vang  #fbe521
+      ao tim  #480254
+      ao hong #ff509b
+  */
+  /* ----- hover-active-color
+      ao trang  #fff
+      ao do   #e01f11
+      ao xanh #027739
+      ao vang  #dfc909
+      ao tim  #2e0136
+      ao hong #f32c82*/
+  
+  --main-color: #009345; 
+  --hover-active-color: #027739;
+  --color-hover-icon: #027739;
+}
+
+.dropdown-menu.show {
+  background: #fff;
+  border: 1px solid var(--main-color);
+  position: relative;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0 70px 0 010px;
+  font-weight: 400;
+  color: var(--main-color);
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-menu.show::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  top: -4%;
+  right: 4%;
+  transform: rotate(45deg);
+}
+
+
+
+.dropdown-item:focus, .dropdown-item:hover{
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--hover-active-color);
+}
+
+#_wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-app{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.verification {
+  font-weight: bold;
+  font-size: 4vh;
+  color: #009345;
+  overflow: hidden;
+  text-align: center;
+  letter-spacing: 17px;
+  padding: 10px 0;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */ 
+  -khtml-user-select: none; /* Konqueror  */
+  -moz-user-select: none; /* Firefox  */
+  -ms-user-select: none;/*  Internet Explorer/Edge */
+  user-select: none;
+}
+
+.verification:after {
+  content: '';
+  background: url(../../wave.jpg);
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  left: 5%;
+}
+
+.verification .color-bar {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
+.cn-border-left{
+  border-left: 0!important;
+}
+
+.display-flex{
+  display: flex;
+  align-items: center;
+}
+
+.display-flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a:hover, a:active, a:focus{
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+}
+
+tr.today{
+  background: #dadada;
+  color: var(--main-color);
+}
+
+.mt-20{
+  margin-top: 20px;
+} 
+
+
+::selection{
+  background: var(--main-color);
+  color: #fff;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 3px 1px var(--hover-active-color);
+  border-color: none;
+}
+
+svg{
+  width: 40%;
+  padding-bottom: 15px;
+}
+
+svg.svg-col{
+  width: 80%;
+}
+
+.btn-success{
+  background: var(--main-color);
+  border: 1px solid var(--hover-active-color);
+}
+
+.btn-success:hover{
+  background: var(--hover-active-color);
+  border: 1px solid var(--hover-active-color);
+}
+
+.margin-bottom-0{
+  margin-bottom: 0;
+}
+
+svg path.cls-1{
+  fill: var(--main-color);
+}
+
+svg path.cls-1-reverse{
+  fill: #fff;
+}
+
+@font-face{
+  font-family: SVN-Segoe;
+  src: url(./webfonts/SVN-Segoe.ttf);
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+.thead-success{
+  background: var(--main-color);
+  color: #fff;
+  text-align: center;
+}
+
+tr{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.h-100{
+  height: 100%;
+}
+
+.w-filter-select{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title-content p{
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.title-content{
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, rgb(0, 94, 44),rgba(0, 147, 69, 0.54),  rgba(250, 224, 66, 0)) 1;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+small.view-more{
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+small.view-more:hover{
+  color: var(--main-color);
+  transition: 0.4sl
+}
+
+textarea{
+  resize: none;
+}
+
+html, body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: SVN-Segoe;
+}
+
+.carousel-item img{
+  width: 100%;
+}
+
+.title-shared-green h4{
+  font-weight: bold;
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3vh;
+  padding-top: 30px;
+}
+
+.carousel-indicators li {
+  width: 9px!important;
+  height: 9px!important;
+  border: 0!important;
+  padding: 0!important;
+  margin: 6px!important;
+}
+
+.carousel-indicators li.active {
+  background: var(--main-color)!important;
+}
+
+.title-shared-white h4{
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3vh;
+  padding-top: 30px;
+}
+
+.title-shared-green img, .title-shared-white img{
+  padding-bottom: 30px;
+}
+
+#_wrapper.fix-100{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.w-container{
+  padding: 0;
+}
+
+.w-col{
+  padding-left: 0;
+} 
+
+.modal-content {
+  border: 3px solid var(--hover-active-color);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 0 0px 5px #fff;
+  margin: .625rem;
+}
+
+.containerRadio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.containerRadio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerRadio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerRadio input:checked ~ .checkmark {
+  background-color: var(--main-color);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.containerRadio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerRadio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerRadio .checkmark:after {
+  left: 9px;
+  top: 4px;
+  width: 8px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+/* admin */
+section.main-content .title-shared {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--hover-active-color);
+  padding: 1.25rem 0;
+}
+
+
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-check input:checked ~ .checkmark {
+  background-color: var(--main-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-check .checkmark:after {
+  left: 38%;
+  top: 21%;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+.pagination{
+  margin: 0;
+  padding: 20px 0;
+}
+
+.page-link{
+  color: var(--main-color)
+}
+
+.page-link:hover {
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--hover-active-color)
+}
+
+.page-item.active .page-link{
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--hover-active-color);
+  border-color: #fff!important;
+}

@@ -1,0 +1,42 @@
+/* _topbar */
+#_topBar{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: var(--main-color);
+    color: #fff;
+    transition: 0.4s;
+}
+
+#_topBar .marquee{
+    line-height: 40px;
+}
+
+#_topBar .register-login{
+    line-height: 40px;
+}
+
+#_topBar .register-login ul li{
+    display: inline;
+    padding:  0 10px;
+    transition: 0.4s;
+    cursor:  pointer;
+}
+
+#_topBar .register-login ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#_topBar .register-login ul li:hover i{
+    transition: 0.4s;
+    color: gold;
+}
+
+@media only screen and (max-width: 991px){
+    #_topBar{
+        display: none;
+        transition: 0.4s;
+    }
+}
+

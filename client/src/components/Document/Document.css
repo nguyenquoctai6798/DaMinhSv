@@ -1,0 +1,104 @@
+/* _documents */
+#_documents{
+    padding: 30px 0;
+    position: relative;
+}
+
+#_documents .important{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+#_documents .select-month-year, #_documents .download-hand-book{
+    margin: auto;
+}
+
+#_documents .filter-select{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#_documents .filter-select .form-group{
+    margin-bottom: 0;
+}
+
+#_documents .filter-select .form-group .form-control{
+    width: 100%;
+}
+
+#_documents .tab-show-xs .tab-select {
+    display: none;
+    transition: 0.4s;
+}
+
+#_documents .tab {
+    float: left;
+    border: 1px solid var(--hover-active-color);
+    background-color: var(--main-color);
+    width: 25%;
+    height: 100%;
+}
+
+#_documents .tab button {
+    display: block;
+    background-color: var(--main-color);
+    padding: 11px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#_documents .tab button:hover {
+    background-color: var(--hover-active-color);;
+}
+
+#_documents button:hover i, #_documents i:hover{
+    color: var(--color-hover-icon);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#_documents .tab button.active {
+    background-color: var(--hover-active-color);;
+}
+
+#_documents .tab-content {
+    float: left;
+    padding: 20px 12px;
+    border: 1px solid var(--hover-active-color);
+    width: 75%;
+    border-left: none;
+    height: auto;
+}
+
+@media only screen and (max-width: 767px){
+    #_documents .hand-book .tab {
+        display: none;
+    }
+
+    #_documents .tab-content {
+        border: 1px solid var(--hover-active-color);;
+        width: 100%;
+        transition: 0.4s;
+    }
+
+    #_documents .tab-show-xs .tab-select {
+        display: inherit;
+        transition: 0.4s;
+    }
+}
+
+
+
+@media only screen and (max-width: 575px){
+    #_documents .download-hand-book{
+        padding-bottom: 15px;
+    }
+}

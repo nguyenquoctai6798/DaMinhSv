@@ -1,0 +1,16 @@
+.input-group-text{
+    background:var(--main-color);
+    color: #fff;
+}
+
+tr:hover{
+    cursor: pointer;
+}
+
+tr a{
+    color: #000;
+}
+
+tr a:hover{
+    color:var(--main-color);
+}

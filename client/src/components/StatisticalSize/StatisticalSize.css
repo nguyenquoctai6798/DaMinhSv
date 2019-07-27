@@ -1,0 +1,157 @@
+.block-statistical{
+    width: 100%;
+    height: 7.8125rem;
+    position: relative;
+    color: #fff;
+    border-radius: .3125rem;
+    padding: .625rem 1.875rem;
+    overflow: hidden;
+    margin: 1.25rem 0;
+}
+
+.block-statistical::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../textture.jpg);
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -2;
+    background-size: contain;
+}
+
+.block-statistical p{
+    position: relative;
+    z-index: 3;
+    margin: 0;
+}
+
+.block-statistical .number {
+    font-size: 4rem;
+    font-family: monospace;
+    color: #fff;
+    z-index: 3;
+    position: relative;
+}
+
+.block-statistical i {
+    position: absolute;
+    bottom: 9%;
+    right: 1%;
+    opacity: 0.7;
+    font-size: 5rem;
+    z-index: -1;
+}
+
+.block-statistical-red{
+    position: relative;
+    background-color: #F44336;
+    color: rgb(168, 20, 9);
+    z-index: 0;
+}
+
+.block-statistical-red::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(240, 54, 40);
+    border-radius: .3125rem;
+    z-index: -3;
+}
+
+.block-statistical-green{
+    position: relative;
+    background-color: #4CAF50;
+    color: rgb(34, 117, 37);
+    z-index: 0;
+}
+
+.block-statistical-green::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(34, 117, 37);
+    border-radius: .3125rem;
+    z-index: -3;
+}
+
+.block-statistical-purple{
+    position: relative;
+    background-color: #9C27B0;
+    color:  rgb(76, 2, 88);
+    z-index: 0;
+}
+
+.block-statistical-purple::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(138, 24, 158);
+    border-radius: .3125rem;
+    z-index: -3;
+}
+
+.block-statistical-yellow{
+    position: relative;
+    color:   rgb(143, 108, 3);
+    background-color: #FFC107;
+    z-index: 0;
+}
+
+.block-statistical-yellow::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(235, 177, 4);
+    border-radius: .3125rem;
+    z-index: -3;
+}
+
+.select-none-background {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+/* This is to remove the arrow of select element in IE */
+.select-none-background::-ms-expand {	display: none; }
+.select-none-background{
+    -webkit-appearance: none;
+    appearance: none;
+}
+@-moz-document url-prefix(){
+    .select-none-background { width: 110%; background-position: right 30px center !important; border: none !important;}
+}
+
+canvas{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title-statistical {
+    padding: .3125rem .625rem;
+    border-radius: 5px;
+    margin: 1.25rem auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.title-statistical  p{
+    margin: 0;
+}

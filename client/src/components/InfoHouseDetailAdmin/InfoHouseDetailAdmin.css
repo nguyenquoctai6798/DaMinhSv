@@ -1,0 +1,33 @@
+.form-info-house .img-avatar .wrapper-img-avatar {
+    width: 100%;
+    height: 12.5rem;
+    overflow: hidden;
+    border: 1px solid var(--main-color);
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-info-house .img-avatar .wrapper-img-avatar img {
+    max-width: unset;
+    width: 100%;
+}
+
+.form-info-house .img-avatar label.lb-file{
+    display: table;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+    bottom: 0;
+    margin: auto;
+}
+
+.form-info-house .img-avatar input[type="file"] {
+    display: none;
+}

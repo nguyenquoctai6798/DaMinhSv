@@ -1,0 +1,16 @@
+.form-executive{
+    background: #fff;
+    padding: 1.25rem;
+}
+
+.block-executive{
+    padding: 1.25rem;
+    background: #fff;
+}
+
+.block-executive .label-house{
+    margin: 0;
+    padding: .3125rem .625rem;
+    background: var(--main-color);
+    color: #fff;
+}

@@ -1,0 +1,101 @@
+/* _listHouse */
+#_listHouse{
+    padding: 30px 0;
+}
+
+#_listHouse .house{
+    background: var(--main-color);
+    border-radius: 5px;
+    padding: 15px 0;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#_listHouse .house .name-house{
+    width: 100%;
+    height: 40px;
+    background: var(--hover-active-color);;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#_listHouse .house .img-house{
+    border: 2px solid #fff;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+#_listHouse .house .img-house img {
+    width: 100%;
+}
+
+#_listHouse .house .info-house{
+    text-align: center;
+    padding: 15px 0;
+}
+
+#_listHouse .house .more-info{
+    width: 50%;
+    height: 40px;
+    background: #fff;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--main-color);
+    margin-bottom: 15px;
+    overflow: hidden;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#_listHouse .house .more-info:hover{
+    background: var(--hover-active-color);
+    color: #fff;
+    transition: 0.4s;
+}
+
+#_listHouse .carousel-indicators li {
+    display: none!important;
+}
+
+@media only screen and (max-width: 1199px){
+    #_listHouse .house .img-house{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    #_listHouse .house .img-house{
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #_listHouse .house .img-house{
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    #_listHouse .house .img-house{
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 444px){
+    #_listHouse .house .img-house{
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 333px){
+    #_listHouse .house .img-house{
+        height: 150px;
+    }
+}

@@ -1,0 +1,25 @@
+/* _footer */
+#_footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    background: var(--hover-active-color);
+    font-size: 0.8rem;
+}
+
+#_footer.fix-bottom{
+    position: fixed;
+    bottom: 0;
+}
+
+#_footer a{
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+#_footer a:hover{
+    color: gold;
+    transition: 0.4s;
+}

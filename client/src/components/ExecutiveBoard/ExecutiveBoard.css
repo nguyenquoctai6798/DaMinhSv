@@ -1,0 +1,40 @@
+/* _executiveBoard */
+.executive{
+    background: var(--main-color);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--main-color);
+    margin-bottom: 15px;
+}
+
+.executive .top-executive{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+.executive .top-executive .wrapper-img-executive {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+
+.executive .bottom-executive{
+    width: 100%;
+    background: #fff;
+    padding: 0 5px;
+    text-indent: 10px;
+}
+
+.executive .bottom-executive hr{
+    margin: 5px;
+}
+
+#_slideExcutive .carousel-indicators li {
+    display: none!important;
+}

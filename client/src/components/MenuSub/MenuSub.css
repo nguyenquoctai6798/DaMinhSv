@@ -1,0 +1,114 @@
+/* _showMenuSub */
+#_showMenuSub{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    background: var(--hover-active-color);
+    width: 300px;
+    height: 100%;
+    color: #fff;
+    text-align: left;
+    transition: 0.4s;
+    padding: 45px 0;
+}
+
+#_showMenuSub .w-col{
+    padding: 0;
+}
+
+#_showMenuSub .action-user{
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    background: var(--main-color);
+    margin: 10px 0;
+}
+
+#_showMenuSub .action-user li{
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.4s;
+    padding:  0 5px;
+}
+
+#_showMenuSub .action-user li:hover i{
+    transition: 0.4s;
+    color: gold;
+}
+
+#_showMenuSub .menu{
+    padding: 0;
+}
+
+#_showMenuSub a {
+    color: #fff;
+}
+
+#_showMenuSub .menu li{
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--hover-active-color);
+    transition: 0.4s;
+    cursor: pointer;
+    text-indent: 20px;
+    color: #fff;
+}
+
+#_showMenuSub .menu li:hover{
+    transition: 0.4s;
+    background: var(--hover-active-color);
+}
+
+#_showMenuSub .menu li:hover i{
+    color: gold;
+    transition: 0.4s;
+}
+
+#_showMenuSub .menu li:last-child{
+    border-bottom: none;
+}
+
+#_btnCloseMenuSub{
+    position: fixed;
+    z-index: 999;
+    top: 1%;
+    right: -100%;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#_btnCloseMenuSub:hover{
+    transition: 0.4s;
+    color: gold;
+}
+
+#_btnCloseMenuSub.show{
+    transition: 0.4s;
+    right: 90%;
+}
+
+#_showMenuSub.show{
+    transition: 0.4s;
+    right: 0;
+}
+
+#_bkBlack{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.651);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+#_bkBlack.show{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
+}

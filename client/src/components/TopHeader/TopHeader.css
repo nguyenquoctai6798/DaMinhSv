@@ -1,0 +1,259 @@
+/* _topHeader */
+#_topHeader{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 2px solid var(--main-color);
+    transition: 0.4s;
+}
+
+#_topHeader .title-top-header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    transition: 0.4s;
+}
+
+#_topHeader .title-top-header p{
+    margin: 0;
+    transition: 0.4s;
+}
+
+#_topHeader .title-top-header h6{
+    margin: 0;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#_topHeader .title-top-header .wrapper-logo-top-header{
+    margin: auto;
+    transition: 0.4s;
+}
+
+#_topHeader .title-top-header .wrapper-logo-top-header img{
+    max-width: 140%;
+    background: #fff;
+    border-radius: 100%;
+    transition: 0.4s;
+}
+
+#_topHeader .menu-main{
+    height: 80px;
+    text-align: right;
+    line-height: 80px;
+    transition: 0.4s;
+}
+
+#_topHeader .menu-main ul li{
+    display: inline;
+    padding:  0 7px;
+    cursor:  pointer;
+    color: var(--main-color);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#_topHeader .menu-main ul li:hover{
+    transition: 0.4s;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 5px 7px;
+}
+
+#_topHeader .menu-main ul li a{
+    color: var(--main-color);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#_topHeader .menu-main ul li:hover a{
+    color: var(--main-color);
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#_topHeader .menu-sub{
+    color: #fff;
+    font-size: 1.1rem;
+    transition: 0.4s;
+    cursor: pointer;
+    line-height: 80px;
+}
+
+#_topHeader .menu-sub:hover{
+    color: gold;
+    transition: 0.4s;
+}
+
+#_topHeader.sticky{
+    position: fixed;
+    height: 60px;
+    top: 0;
+    z-index: 99999999999;
+    transition: 0.4s;
+    background: var(--main-color);
+    border-bottom: 2px solid var(--hover-active-color);
+}
+
+#_topHeader.sticky small{
+    display: none;
+    transition: 0.4s;
+}
+
+#_topHeader.sticky .menu-main ul li{
+    color: #fff;
+}
+
+#_topHeader.sticky .menu-main ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#_topHeader.sticky .menu-main ul li:hover a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+#_topHeader.sticky .wrapper-title-top-header{
+    color: #fff;
+    height: 60px;
+    padding-top: 1%;
+}
+
+#_topHeader.sticky .title-top-header{
+    height: 60px;
+    transition: 0.4s;
+}
+
+#_topHeader.sticky .title-top-header .wrapper-logo-top-header img{
+    width: 90%;
+    transition: 0.4s;
+}
+
+#_topHeader.sticky .menu-main ul{
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+#_topHeader.sticky .menu-main ul li:hover{
+    transition: 0.4s;
+    background-color: #fff;
+    color: var(--main-color);
+    padding: 5px 7px;
+}
+
+#_topHeader.sticky .menu-main{
+    height: 60px;
+    transition: 0.4s;
+}
+
+#_topHeader.sticky .menu-sub{
+    height: 60px;
+    line-height: 60px;
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 1199px){
+    #_topHeader .title-top-header .wrapper-logo-top-header img{
+        max-width: 177%;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    #_topHeader{
+        background: var(--main-color); 
+        border-bottom: 2px solid var(--hover-active-color);  
+        text-align: center; 
+    }
+
+    #_topHeader .title-top-header{
+        color: #fff;
+    }
+
+    #_topHeader .title-top-header .wrapper-logo-top-header img{
+        max-width: 70%;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #_topHeader .title-top-header .wrapper-logo-top-header img{
+        max-width: 100%;
+        transition: 0.4s;
+    }
+}
+
+
+@media only screen and (max-width: 610px){
+    #_topHeader .menu-sub{
+        top: 30%;
+        right: 0%;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 444px){
+    #_topHeader{
+        height: 50px;
+    }
+
+    #_topHeader .title-top-header{
+        height: 50px;
+        padding: 0;
+        line-height: 10px;
+    }
+
+    #_topHeader .title-top-header .wrapper-logo-top-header{
+        display: none;
+        transition: 0.4s;
+    }
+
+    #_topHeader .title-top-header p{
+        display: none;
+        transition: 0.4s;
+    }
+
+    #_topHeader .title-top-header h6{
+        font-size: 0.75rem;
+        transition: 0.4s;
+        padding: 0;
+    }
+
+    #_topHeader .title-top-header small{
+        font-size: 0.6rem;
+        transition: 0.4s;
+    }
+
+    #_topHeader .menu-sub{
+        transition: 0.4s;
+        line-height: 50px;
+    }
+
+    #_topHeader.sticky .wrapper-title-top-header small{
+        display: inline;
+        transition: 0.4s;
+    }
+
+    #_topHeader.sticky .wrapper-title-top-header{
+        height: 50px;
+        transition: 0.4s;
+    }
+
+    #_topHeader.sticky{
+        height: 50px;
+        transition: 0.4s;
+    }
+
+    #_topHeader.sticky .menu-sub{
+        height: 50px;
+        line-height: 50px;
+        transition: 0.4s;
+    }
+}

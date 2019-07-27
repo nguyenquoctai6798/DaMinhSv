@@ -1,0 +1,201 @@
+/* _slideAndNews */
+#_slideAndNews{
+    background-image: linear-gradient(203deg, var(--main-color), var(--hover-active-color));
+}
+
+#_slideAndNews .w-col{
+    padding: 0;
+}
+
+#_slideAndNews .wrapper-lastest-news{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-shadow:  0 0 0px 2px white;
+}
+
+#_slideAndNews .wrapper-lastest-news img{
+    position: relative;
+    width: 100%;
+}
+
+#_slideAndNews .wrapper-lastest-news .wrapper-content{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.699);
+    color: #fff;
+    padding: 5px;
+    transition: 0.4s;
+    height: 19%;
+    cursor: pointer;
+    width: 100%;
+}
+
+#_slideAndNews .wrapper-lastest-news .wrapper-content h6{
+    color: gold;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2vh;
+}
+
+
+#_slideAndNews .wrapper-lastest-news:hover .wrapper-content{
+    height: 22%;
+    transition: 0.4s;
+}
+
+#_slideAndNews .news-slide{
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 3px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+#_slideAndNews .news-slide .bk-hover, #_slideAndNews .block-lastest-news-notifications .bk-hover, #_slideAndNews .block-album .bk-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--hover-active-color);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+    transform: scale(0.5);
+    opacity: 0;
+    z-index: 9999;
+}
+
+
+#_slideAndNews .news-slide:hover .bk-hover, #_slideAndNews .block-lastest-news-notifications:hover .bk-hover, #_slideAndNews .block-album:hover .bk-hover{
+    transform: scale(1);
+    transition: 0.4s;
+    opacity: 1;
+}
+
+#_slideAndNews .news-slide .content-news-slide{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+@media only screen and (max-width: 991px){
+    #_slideAndNews .wrapper-lastest-news .wrapper-content{
+        height: 26%;
+        transition: 0.4s;
+    }
+
+    #_slideAndNews .wrapper-lastest-news:hover .wrapper-content{
+        height: 28%;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 989px){
+    #_slideAndNews .wrapper-lastest-news{
+        height: 200px;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 982px){
+    #_slideAndNews .wrapper-lastest-news{
+        height: 190px;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    #_slideAndNews .wrapper-lastest-news{
+        height: 180px;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 937px){
+    #_slideAndNews .wrapper-lastest-news{
+        height: 170px;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 910px){
+    #_slideAndNews .wrapper-lastest-news{
+        height: 160px;
+        transition: 0.4s;
+    }
+
+    #_slideAndNews .wrapper-lastest-news .wrapper-content{
+        height: 28%;
+        transition: 0.4s;
+    }
+
+    #_slideAndNews .wrapper-lastest-news:hover .wrapper-content{
+        height: 30%;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 871px){
+    #_slideAndNews .wrapper-lastest-news{
+        height: 150px;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 856px){
+    #_slideAndNews .wrapper-lastest-news{
+        height: 140px;
+        transition: 0.4s;
+    }
+
+    #_slideAndNews .wrapper-lastest-news .wrapper-content{
+        height: 30%;
+        transition: 0.4s;
+    }
+
+    #_slideAndNews .wrapper-lastest-news:hover .wrapper-content{
+        height: 32%;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 821px){
+    #_slideAndNews .wrapper-lastest-news{
+        height: 130px;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #_slideAndNews .wrapper-lastest-news{
+        height: 120px;
+        transition: 0.4s;
+    }
+
+    #_slideAndNews .wrapper-lastest-news .wrapper-content{
+        height: 33%;
+        transition: 0.4s;
+    }
+
+    #_slideAndNews .wrapper-lastest-news:hover .wrapper-content{
+        height: 35%;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #_slideAndNews .wrapper-lastest-news{
+        height: 160px;
+        transition: 0.4s;
+    }
+}

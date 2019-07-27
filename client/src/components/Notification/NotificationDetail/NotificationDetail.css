@@ -1,0 +1,18 @@
+/* notification-detail */
+.notification-detail{
+    padding: 30px 0;
+    border: 1px solid var(--main-color);
+}
+
+.notification-detail .title-notinfication-detail{
+    margin: auto;
+}
+
+.notification-detail .title-notinfication-detail h6{
+    margin: 0;
+}
+
+.notification-detail .content{
+    padding: 0 20px;
+    text-align: justify;
+}

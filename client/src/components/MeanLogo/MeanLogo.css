@@ -1,0 +1,32 @@
+/* _mean-logo */
+#_mean-logo{
+    overflow: hidden;
+    background: var(--main-color);
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#_mean-logo .content .logo{
+    text-align: center;
+    margin: auto;
+}
+
+#_mean-logo .content .logo2{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#_mean-logo .content .logo2 img {
+    width: 50%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+}
+
+#_mean-logo .content .logo img{
+    width: 50%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+}

@@ -1,0 +1,190 @@
+/* _registerEvent */
+#_registerEvent .tab-link {
+    background-color: var(--main-color);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    transition: 0.4s;
+}
+
+#_registerEvent .tab-link:hover {
+    background-color: var(--hover-active-color);
+    transition: 0.4s;
+}
+
+#_registerEvent .tab-content {
+    display: none;
+    padding: 30px 0;
+    float: left;
+    width: 100%;
+    border: 1px solid var(--main-color);
+}
+
+#_registerEvent .tab-select-register-event{
+    display: none;
+    transition: 0.4s;
+}
+
+#_registerEvent .tab-button-register-event{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#_registerEvent .tab-button-register-event button.active {
+    background-color: var(--hover-active-color);
+    position: relative;
+}
+
+#_registerEvent .tab-button-register-event button.active:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    bottom: -7px;
+    left: 50%;
+    transform: rotate(45deg);
+}
+
+#_registerEvent .title-register-event-content{
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 3vh;
+}
+
+#_registerEvent .b-food{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: var(--main-color);
+    color: #fff;
+    text-align: center;
+}
+
+#_registerEvent .b-food img{
+    width: 100%;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+}
+
+#_registerEvent .b-countdown-time, #_registerEvent .b-date-dont-eat-rice,#_registerEvent .b-statistical{    
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+}
+
+#_registerEvent .b-statistical, #_registerEvent .b-statistical ul{
+    margin: 0!important;
+}
+
+#_registerEvent .b-countdown-time ul, #_registerEvent .b-date-dont-eat-rice ul,#_registerEvent .b-statistical ul{
+    display: block;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#_registerEvent .b-countdown-time ul li, #_registerEvent .b-date-dont-eat-rice ul li,#_registerEvent .b-statistical ul li{
+    display: inline-block;
+}
+
+#_registerEvent .b-statistical ul li{
+    padding: 0 10px;
+}
+
+
+
+#_registerEvent .b-countdown-time .b-time, #_registerEvent .b-date-dont-eat-rice .b-date,#_registerEvent .b-statistical .b-eat{
+    font-weight: bold;
+    font-family: initial;
+    color: #fff;
+    font-size: 6vh;
+    padding: 0px 6px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+}
+
+#_registerEvent .b-countdown-time .b-time:after, #_registerEvent .b-date-dont-eat-rice .b-date:after,#_registerEvent .b-statistical .b-eat:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: #F44336;
+    border-bottom: 1px solid #ffc3be;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#_registerEvent .b-countdown-time .b-time:before, #_registerEvent .b-date-dont-eat-rice .b-date::before, #_registerEvent .b-statistical .b-eat:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: #da2215;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+#_registerEvent .b-countdown-time .colon{  
+    align-items: center;    
+    font-weight: bold;
+    color: #da2215;
+}
+
+#_registerEvent .b-date-dont-eat-rice .slash{  
+    align-items: center;    
+    font-weight: bold;
+    color: #da2215;
+    font-size: 5vh;
+}
+
+#_registerEvent .list-register{
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid;
+}
+
+@media only screen and (max-width: 767px){
+    #_registerEvent .tab-button-register-event{
+        display: none;
+    }
+
+    #_registerEvent .tab-select-register-event{
+        display: inherit;
+        transition: 0.4s;
+    }
+
+    #_registerEvent .b-register-rice{
+        transition: 0.4s;
+        margin-bottom: 30px;
+    }
+    
+    #_registerEvent .statistical-register{
+        transition: 0.4s;
+        margin-top: 30px;
+    }
+}
+
+.timeOut {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-color);
+}

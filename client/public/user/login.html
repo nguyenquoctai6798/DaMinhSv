@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ban Mục Vụ Sinh Viên Đaminh</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="../lib/images/logo-04.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../lib/css/fontawesome.css" />
+    <link rel="stylesheet" href="../lib/css/all.css" />
+    <link rel="stylesheet" href="../lib/css/user.css">
+</head>
+<body>
+    <div id="_wrapper" class="fix-100">
+        <div id="_topBar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 d-none d-sm-block marquee">
+                        <marquee>Chào mừng bạn đến với website của Ban Mục Vụ Sinh Viên Đaminh</marquee>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 register-login text-sm-right text-xs-center">
+                        <ul>
+                            <li> <a href="register.html"><i class="fas fa-user-edit"></i>&nbsp;Đăng Ký</a> </li>
+                            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp;Đăng Nhập</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- _topBar -->
+        <div id="_topHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-lg-5 title-top-header text-xs-center text-lg-left">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-2 wrapper-logo-top-header">
+                                    <a href="index.html">
+                                        <img src="../lib/images/logo-04.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-10 wrapper-title-top-header">
+                                    <p>TỈNH DÒNG ĐAMINH VIỆT NAM</p>
+                                    <h6>BAN MỤC VỤ SINH VIÊN ĐAMINH</h6>
+                                    <small>44 Tú Xương, phường 7, quận 3, Tp.HCM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- title-top-header -->
+                    <div class="col-7 d-none d-lg-block menu-main">
+                        <ul>
+                            <li><a href="index.html">Trang Chủ</a></li>
+                            <li><a href="notifications.html">Thông Báo</a></li>
+                            <li><a href="documents.html">Tài Liệu</a></li>
+                            <li><a href="register-event.html">Đăng Ký</a></li>
+                            <li><a href="library.html">Thư Viện</a></li>
+                            <li><a href="contact.html">Liên Hệ</a></li>
+                        </ul>
+                    </div> <!-- menu-main -->
+                    <div id="_menuSub" class="col-2 d-lg-none menu-sub">
+                        <i class="fas fa-bars"></i>
+                    </div> <!-- menu-sub -->
+                </div>
+            </div>
+        </div> <!-- _topHeader -->
+        <div id="_login">
+            <!-- <div class="form-login">
+                <div class="row">
+                    <div class="col-4 logo-login">
+                        <img src="../lib/images/logo-04.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-8 w-login">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-login"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" id="_inputUsername" class="form-control" placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-login"><i class="fas fa-lock"></i></span>
+                            </div>
+                            <input type="text" id="_inputPass" class="form-control" placeholder="Mật khẩu">
+                        </div>
+                        <div class="container-fluid w-container">
+                            <div class="row text-right">
+                                <div class="col-8">
+                                    <button class="btn btn-light btn-block btn-login"><i class="fas fa-sign-in-alt"></i>&nbsp;Đăng nhập</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 text-center">
+                                <small>Quên mật khẩu ?</small>
+                                
+                            </div>
+                            <div class="col-xs-12 col-sm-6 text-center">
+                                <small>Đăng ký tài khoản</small>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="form-login form-forgot-password">
+                <div class="row">
+                    <div class="col-4 logo-login">
+                        <img src="../lib/images/logo-04.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-8 w-login">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-login"><i class="fas fa-at"></i></span>
+                            </div>
+                            <input type="text" id="_inputUsername" class="form-control" placeholder="Địa chỉ email">
+                        </div>
+                        <div class="container-fluid w-container">
+                            <div class="row text-right">
+                                <div class="col-8">
+                                    <button type="button" class="btn btn-light btn-block btn-login" data-toggle="modal" data-target="#_mbForgotPass"><i class="fas fa-sign-in-alt"></i>&nbsp;Gửi yêu cầu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="_mbForgotPass">
+                    <div class="modal-dialog modal-md modal-dialog-centered">
+                        <div class="modal-content">
+                            <!-- Modal body -->
+                            <div class="modal-body text-center">
+                                Hệ thống đã gửi thông báo về email <b>hauphubinh013027@gmail.com</b>. <br>
+                                Vui lòng truy cập vào email để cập nhật lại mật khẩu <br>
+                                Xin cám ơn
+                            </div>
+                            
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Quay lại</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- _login -->
+        <div id="_footer" class="fix-bottom">
+            Copyright <i class="fa fa-copyright"></i> 2019. Thiết kế và duy trì bởi <a href="author.html" class="author-link">Nhóm Sinh Viên Đaminh</a>
+        </div><!-- _footer -->
+        <div id="_scrollTop">
+            <i class="fas fa-angle-up"></i>
+        </div> <!-- _scrollTop -->
+    </div> <!-- _wrapper -->
+    <div id="_showMenuSub">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h6><b>BAN MỤC VỤ SINH VIÊN ĐAMINH</b></h6>
+                    <hr/>
+                </div>
+                <div class="col-12">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+                        <div class="input-group-append-sm">
+                            <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 w-col">
+                    <ul class="action-user">
+                        <li><a href="register.html"><i class="fas fa-user-edit"></i>&nbsp;Đăng Ký</a></li>
+                        <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp;Đăng Nhập</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 w-col">
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <div class="col-10">
+                                            Trang Chủ
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="notifications.html">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        Thông Báo
+                                    </div>
+                                </div> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="documents.html">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        Tài Liệu
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="library.html">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-images"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        Thư Viện
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-phone-volume"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        Liên Hệ
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="_btnCloseMenuSub">
+            <i class="fas fa-times"></i>
+        </div>
+    </div> <!-- _showMenuSub -->
+    <div id="_bkBlack"></div>
+    <!-- Optional JavaScript -->
+    <script src="../lib/js/user.js"></script>
+    <script src="../lib/js/login.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../lib/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../lib/js/popper.min.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+</body>
+</html>

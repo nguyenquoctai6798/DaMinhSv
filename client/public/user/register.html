@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ban Mục Vụ Sinh Viên Đaminh</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="../lib/images/logo-04.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../lib/css/fontawesome.css" />
+    <link rel="stylesheet" href="../lib/css/all.css" />
+    <link rel="stylesheet" href="../lib/css/user.css">
+</head>
+<body>
+    <div id="_wrapper" class="fix-100">
+        <div id="_topBar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 d-none d-sm-block marquee">
+                        <marquee>Chào mừng bạn đến với website của Ban Mục Vụ Sinh Viên Đaminh</marquee>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 register-login text-sm-right text-xs-center">
+                        <ul>
+                            <li> <a href="register.html"><i class="fas fa-user-edit"></i>&nbsp;Đăng Ký</a> </li>
+                            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp;Đăng Nhập</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- _topBar -->
+        <div id="_topHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-lg-5 title-top-header text-xs-center text-lg-left">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-2 wrapper-logo-top-header">
+                                    <a href="index.html">
+                                        <img src="../lib/images/logo-04.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-10 wrapper-title-top-header">
+                                    <p>TỈNH DÒNG ĐAMINH VIỆT NAM</p>
+                                    <h6>BAN MỤC VỤ SINH VIÊN ĐAMINH</h6>
+                                    <small>44 Tú Xương, phường 7, quận 3, Tp.HCM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- title-top-header -->
+                    <div class="col-7 d-none d-lg-block menu-main">
+                        <ul>
+                            <li><a href="index.html">Trang Chủ</a></li>
+                            <li><a href="notifications.html">Thông Báo</a></li>
+                            <li><a href="documents.html">Tài Liệu</a></li>
+                            <li><a href="register-event.html">Đăng Ký</a></li>
+                            <li><a href="library.html">Thư Viện</a></li>
+                            <li><a href="contact.html">Liên Hệ</a></li>
+                        </ul>
+                    </div> <!-- menu-main -->
+                    <div id="_menuSub" class="col-2 d-lg-none menu-sub">
+                        <i class="fas fa-bars"></i>
+                    </div> <!-- menu-sub -->
+                </div>
+            </div>
+        </div> <!-- _topHeader -->
+        <div id="_registerMember">
+            <div class="form-register">
+                <div class="title-register">
+                    <h5>Đăng Ký Tài Khoản</h5>
+                    <small>Điền đầy đủ và chính xác nhé!!!</small>
+                </div>
+                <hr>
+                <div class="process-register">
+                    <div class="container-fluid">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="icon-process-register active">
+                                    <i class="fas fa-id-badge"></i>
+                                </div>
+                                <small class="info-process active">Tài khoản</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="icon-process-register =">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <small class="info-process">Cá nhân</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="icon-process-register">
+                                    <i class="fas fa-hashtag"></i>
+                                </div>
+                                <small class="info-process =">Khác</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-process first-process"></div>
+                    <div class="line-default"></div>
+                </div><!-- process-register -->
+                <hr>
+                <div id="_formAccount" class="form-content form-account active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4 img-avatar">
+                                <label><small><i class="far fa-image"></i>&nbsp;Ảnh đại diện</small></label>
+                                <div class="wrapper-img-avatar">
+                                    <img id="_fileAvatar" src="../lib/images/avt.png" alt="your image" class="img-fluid"/>
+                                    <label class="lb-file">
+                                        <input type='file' onchange="readURL(this);"  class="input-file"/>
+                                    </label>
+                                </div>
+                            </div> <!-- img-avatar -->
+                            <div class="col-xs-12 col-md-4 info-account">
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-cross"></i>&nbsp;Tên Thánh</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Giuse">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="far fa-user-circle"></i>&nbsp;Họ tên đệm</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Hồ Công">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="far fa-user-circle"></i>&nbsp;Tên</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Hậu">
+                                </div>
+                            </div> <!-- info-account -->
+                            <div class="col-xs-12 col-md-4 info-account">
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-mobile-alt"></i>&nbsp;Số điện thoại</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="0928143201">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-unlock-alt"></i>&nbsp;Mật khẩu</small></label>
+                                    <input type="password" class="form-control" name="" id="" aria-describedby="helpId" placeholder="******">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-unlock-alt"></i>&nbsp;Nhập lại mật khẩu</small></label>
+                                    <input type="password" class="form-control" name="" id="" aria-describedby="helpId" placeholder="******">
+                                </div>
+                            </div> <!-- info-account -->
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                            </div>
+                            <div class="d-none d-md-block col-md-4"></div>
+                            <div class="col-6 col-md-4">
+                                <button class="btn btn-block btn-success btn-next">Tiếp theo&nbsp;<i class="fas fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--  form-account -->
+                <div id="_formProfile" class="form-content form-profile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4 info-profile">
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-birthday-cake"></i>&nbsp;Năm sinh</small></label>
+                                    <input type="date" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-home"></i>&nbsp;Quê quán</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Đồng Nai">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="far fa-envelope"></i>&nbsp;Email</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="daminhsinhvien@gmail.com">
+                                </div>
+                            </div> <!-- info-account -->
+                            <div class="col-xs-12 col-md-4 info-profile">
+                                <div class="form-group">
+                                    <label for=""><small><i class="fab fa-facebook"></i>&nbsp;Facebook</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="BanMucVuSinhVienDaMinh">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-school"></i>&nbsp;Trường</small></label>
+                                    <select class="form-control" name="" id="">
+                                        <option>ĐH Khoa Học Tự Nhiên</option>
+                                        <option>ĐH Bách Khoa</option>
+                                        <option>ĐH Kinh Tế</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="fab fa-whmcs"></i>&nbsp;Chuyên ngành</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Khoa học máy tính">
+                                </div>
+                            </div> <!-- info-account -->
+                            <div class="col-xs-12 col-md-4 info-profile">
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-user-graduate"></i>&nbsp;Sinh viên năm</small></label>
+                                    <input type="number" class="form-control" name="" id="" aria-describedby="helpId" placeholder="1">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-place-of-worship"></i>&nbsp;Lưu xá</small></label>
+                                    <select class="form-control" name="" id="">
+                                        <option>Nhà 1- Vinh Sơn</option>
+                                        <option>Nhà 2 - Đaminh Cẩm</option>
+                                        <option>Nhà 3 - Alberto</option>
+                                        <option>Nhà 4 - Toma Aquino</option>
+                                        <option>Nhà 5 - Giuse Khang</option>
+                                        <option>Nhà 6 - Thủ Đức</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="far fa-calendar-alt"></i>&nbsp;Thời gian vào</small></label>
+                                    <div class="container-fluid w-container">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <select class="form-control" name="" id="">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6  w-col">
+                                                <select class="form-control" name="" id="">
+                                                    <option>2019</option>
+                                                    <option>2018</option>
+                                                    <option>2017</option>
+                                                    <option>2016</option>
+                                                    <option>2015</option>
+                                                    <option>2014</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div> <!-- info-account -->
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <button class="btn btn-block btn-success btn-prev"><i class="fas fa-angle-left"></i>&nbsp;Trước đó</button>
+                            </div>
+                            <div class="d-none d-md-block col-md-4"></div>
+                            <div class="col-6 col-md-4">
+                                <button class="btn btn-block btn-success btn-next">Tiếp theo&nbsp;<i class="fas fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- _formProfile -->
+                <div id="_formDifferent" class="form-content form-different">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4 info-profile">
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-user-friends"></i>&nbsp;Tên thánh - Họ tên Cha</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Giuse Nguyễn Văn Cảnh">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-user-friends"></i>&nbsp;Tên thánh - Họ tên Mẹ</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Anna Nguyễn Thùy Trang">
+                                </div>
+                            </div> <!-- info-account -->
+                            <div class="col-xs-12 col-md-4 info-profile">
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-phone-volume"></i>&nbsp;SĐT Cha / Mẹ 1</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="0123586942">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-phone-volume"></i>&nbsp;SĐT Cha / Mẹ 2</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="0123586942">
+                                </div>
+                            </div> <!-- info-account -->
+                            <div class="col-xs-12 col-md-4 info-profile">
+                                <div class="form-group">
+                                        <label for=""><small><i class="fas fa-church"></i>&nbsp;Giáo phận</small></label>
+                                        <select class="form-control" name="" id="">
+                                            <option>TGP Sài Gòn</option>
+                                            <option>Đà Lạt</option>
+                                            <option>Phan Thiết</option>
+                                            <option>Bà Rịa</option>
+                                            <option>Phú Cường</option>
+                                            <option>Xuân Lộc</option>
+                                        </select>
+                                    </div>
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-cross"></i>&nbsp;Giáo xứ</small></label>
+                                    <select class="form-control" name="" id="">
+                                        <option>Bình Lâm</option>
+                                        <option>An Lâm</option>
+                                        <option>Trúc Lâm</option>
+                                        <option>Thọ Lâm</option>
+                                        <option>Phương Lâm</option>
+                                        <option>Ngọc Lâm</option>
+                                    </select>
+                                </div>
+                            </div> <!-- info-account -->
+                            <div class="col-12 info-address">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="form-group">
+                                            <label for=""><small><i class="fas fa-home"></i>
+                                                &nbsp;Địa chỉ nhà</small></label>
+                                            <select class="form-control" name="" id="">
+                                                <option>Đồng Nai</option>
+                                                <option>Bình Dương</option>
+                                                <option>Bình Phước</option>
+                                                <option>Lâm Đồng</option>
+                                                <option>Hồ Chí Minh</option>
+                                                <option>Tây Ninh</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="form-group">
+                                            <label for="">&nbsp;</label>
+                                            <select class="form-control" name="" id="">
+                                                <option>Tân Phú</option>
+                                                <option>Định Quán</option>
+                                                <option>Thống Nhất</option>
+                                                <option>Biên Hòa</option>
+                                                <option>Vĩnh Cửu</option>
+                                                <option>Trảng Bom</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="form-group">
+                                            <label for="">&nbsp;</label>
+                                            <select class="form-control" name="" id="">
+                                                <option>Phú Bình</option>
+                                                <option>Phú Lâm</option>
+                                                <option>Phú Thanh</option>
+                                                <option>Phú Xuân</option>
+                                                <option>Phú Sơn</option>
+                                                <option>Trà Cổ</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for=""></label>
+                                            <textarea class="form-control" name="" id="" rows="3" placeholder="112 tổ 7, ấp Phú Dũng"></textarea>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- info-account -->
+                            <div class="col-xs-12 col-md-8 info-profile cn-border-left">
+                                <div class="form-group">
+                                    <label for=""><small><i class="fas fa-skating"></i>&nbsp;Năng khiếu</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Guitar, Piano, Bơi lội ...">
+                                </div>
+                            </div> <!-- info-account -->
+                            <div class="col-xs-12 col-md-4 info-profile cn-border-left display-flex-center">
+                                <div class="form-group margin-bottom-0">
+                                    <label class="container-check margin-bottom-0"><small>Cựu thành viên lưu xá</small>
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div> <!-- info-account -->
+                            <div class="col-12">
+                                <hr>
+                            </div>
+                            <div class="col-12 col-sm-6 info-profile cn-border-left display-flex-center">
+                                <div class="verification">
+                                    <span class="code"></span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 info-profile cn-border-left">
+                                <div class="form-group">
+                                    <label for=""><small><i class="far fa-credit-card"></i>&nbsp;Nhập mã kiểm tra</small></label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <button class="btn btn-block btn-success btn-prev"><i class="fas fa-angle-left"></i>&nbsp;Trước đó</button>
+                            </div>
+                            <div class="d-none d-md-block col-md-4"></div>
+                            <div class="col-6 col-md-4">
+                                <button class="btn btn-block btn-success btn-register">Đăng Ký&nbsp;<i class="far fa-edit"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- formDifferent -->
+            </div>
+        </div> <!-- _registerMember -->
+        <div id="_footer">
+            Copyright <i class="fa fa-copyright"></i> 2019. Thiết kế và duy trì bởi <a href="author.html" class="author-link">Nhóm Sinh Viên Đaminh</a>
+        </div><!-- _footer -->
+        <div id="_scrollTop">
+            <i class="fas fa-angle-up"></i>
+        </div> <!-- _scrollTop -->
+    </div> <!-- _wrapper -->
+    <div id="_showMenuSub">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h6><b>BAN MỤC VỤ SINH VIÊN ĐAMINH</b></h6>
+                    <hr/>
+                </div>
+                <div class="col-12">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+                        <div class="input-group-append-sm">
+                            <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 w-col">
+                    <ul class="action-user">
+                        <li><a href="register.html"><i class="fas fa-user-edit"></i>&nbsp;Đăng Ký</a></li>
+                        <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp;Đăng Nhập</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 w-col">
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <div class="col-10">
+                                            Trang Chủ
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="notifications.html">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        Thông Báo
+                                    </div>
+                                </div> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="documents.html">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        Tài Liệu
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="library.html">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-images"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        Thư Viện
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="fas fa-phone-volume"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        Liên Hệ
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="_btnCloseMenuSub">
+            <i class="fas fa-times"></i>
+        </div>
+    </div> <!-- _showMenuSub -->
+    <div id="_bkBlack"></div>
+    <!-- Optional JavaScript -->
+    <script src="../lib/js/user.js"></script>
+    <script src="../lib/js/register.js"></script>
+    <script src="../lib/js/verifications.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../lib/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../lib/js/popper.min.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+</body>
+</html>

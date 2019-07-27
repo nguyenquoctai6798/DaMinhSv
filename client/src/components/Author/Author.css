@@ -1,0 +1,24 @@
+/* author */
+#_author .c-block{
+    display: flex;
+    align-items: center;
+}
+
+#_author .author-link{
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+#_author .author-link:hover{
+    transition: 0.4s;
+    color: gold;
+}
+
+#_author .block-author-info p{
+    margin: 2px;
+}
+
+#_author .block-author-img img{
+    border-radius: 50%;
+}

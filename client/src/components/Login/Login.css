@@ -1,0 +1,138 @@
+/* _login */
+#_login{
+    padding: 30px 0;
+    width: 100%;
+    height: calc(100% - 40px - 80px - 39px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#_login::after{
+    content: '';
+    background-image: url(../../bkgreen.jpg);
+    background-size: cover;
+    background-position: bottom;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+#_login .logo-login img{
+    width: 80%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+#_login .logo-login{
+    border-right: 1px solid var(--hover-active-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#_login .form-login{
+    width: 40%;
+    position: relative;
+    background: var(--main-color);
+    padding: 50px 50px;
+    border-radius: 5px;
+}
+
+#_login .form-login .btn-login {
+    transition: 0.4s;
+    cursor: pointer;
+    color: var(--main-color);
+    margin-top: 10px;
+}
+
+#_login small{
+    color: #fff;
+    font-style: italic;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#_login small:hover{
+    color: gold;
+    transition: 0.4s;
+}
+
+#_login .form-login .btn-login:hover{
+    color: #fff;
+    background: var(--hover-active-color);
+    border:1px solid #fff;
+    transition: 0.4s;
+}
+
+#_login .input-group-text{
+    background: var(--hover-active-color);
+    color: #fff;
+    transition: 0.4s;
+}
+
+#_login .form-control:focus{
+    box-shadow: none;
+    border: 0;
+}
+
+#_login .input-group-text.resizeHeight{
+    background: gold;
+    color: var(--hover-active-color);
+    transition: 0.4s;
+}
+
+#_login .text-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1199px){
+    #_login .form-login{
+        width: 50%;
+        transition: 0.4s;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    #_login .form-login{
+        width: 60%;
+        transition: 0.4s;
+    }
+
+    #_login{
+        height: calc(100% - 80px - 39px);
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #_login .logo-login{
+        display: none;
+        transition: 0.4s;
+    }
+
+    #_login .w-login{
+        max-width: 500px;
+        flex: auto;
+    }
+}
+
+
+@media only screen and (max-width: 575px){
+    #_login .form-login{
+    width: 90%;
+    }
+}
+
+@media only screen and (max-width: 444px){
+    #_login{
+        height: calc(100% - 50px - 39px);
+    }
+}

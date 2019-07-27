@@ -1,0 +1,105 @@
+.block-info .img-avatar{
+    
+}
+
+.block-info .img-avatar .card-img {
+    width: 200px;
+    margin: auto;
+    height: 100%;
+    background: var(--main-color);
+    padding: 10px;
+    padding-top: 25px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 3px 0 #009345;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.block-info .img-avatar .card-img .shape {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 7px;
+    border-radius: 15px;
+    background: #f4f7fa;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.block-info .img-avatar .card-img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    top: -16%;
+    z-index: -1;
+    opacity: 0.1;
+    background-size: cover;
+    background-image: url(/static/media/textture2.90625218.jpg);
+    transform: skewY(10deg);
+}
+.block-info .img-avatar .card-img::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: -13%;
+    z-index: -1;
+    left: -0%;
+    opacity: 0.1;
+    background-size: cover;
+    background-image: url(/static/media/textture2.90625218.jpg);
+    transform: skewY(10deg);
+}
+
+
+.block-info .img-avatar .title-card {
+    text-transform: uppercase;
+}
+
+.block-info .img-avatar .idaccount-style {
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: monospace;
+}
+
+.block-info .img-avatar .fullname-style {
+    color: #FFEB3B;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.block-info .img-avatar .wrapper-img-avatar {
+    width: 7.375rem;
+    height: 7.375rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #f4f7fa;
+    margin: auto;
+}
+
+.block-info .img-avatar .wrapper-img-avatar img {
+    width: 100%;
+}
+
+.block-info .img-avatar label.lb-file{
+    display: table;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+    bottom: 0;
+    margin: auto;
+}
+
+.block-info .img-avatar input[type="file"] {
+    display: none;
+}
