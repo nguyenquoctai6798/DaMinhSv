@@ -24,7 +24,7 @@
     "express-jwt": "^5.3.1",
     "fs": "0.0.1-security",
     "http-errors": "~1.6.3",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "morgan": "~1.9.1",
     "move-file": "^1.2.0",
     "nodemailer": "^6.2.1",
